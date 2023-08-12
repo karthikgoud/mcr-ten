@@ -1,0 +1,19 @@
+.dashCardCont {
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #f4f4f4;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.dashCardCont:hover {
+  background-color: #918a8a;
+  color: white;
+}

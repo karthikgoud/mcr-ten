@@ -1,0 +1,22 @@
+.newCont {
+  width: 600px;
+  margin-left: 3rem;
+}
+.newCont div {
+  padding-bottom: 1rem;
+}
+
+.newCont div input,
+select,
+textarea {
+  width: 80%;
+  padding: 0.6rem;
+  border: none;
+  outline: 1px solid gray;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  padding-bottom: 0.5rem;
+}

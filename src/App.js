@@ -1,24 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import WrapperMain from "./components/WrapperMain/WrapperMain";
+import DashboardMain from "./pages/DashboardMain/DashboardMain";
+import DeptMain from "./pages/DeptMain/DeptMain";
+import ProductListMain from "./pages/ProductListMain/ProductListMain";
+import NewProductPage from "./pages/NewProductPage/NewProductPage";
+import ProductDetail from "./pages/ProductDetail/ProductDetail";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <WrapperMain>
+            <DashboardMain />
+          </WrapperMain>
+        }
+      />
+      <Route
+        path="/department"
+        element={
+          <WrapperMain>
+            <DeptMain />
+          </WrapperMain>
+        }
+      />
+      <Route
+        path="/department/:name"
+        element={
+          <WrapperMain>
+            <ProductListMain />
+          </WrapperMain>
+        }
+      />
+
+      <Route
+        path="/newProduct"
+        element={
+          <WrapperMain>
+            <NewProductPage />
+          </WrapperMain>
+        }
+      />
+
+      <Route
+        path="/product/:Id"
+        element={
+          <WrapperMain>
+            <ProductDetail />
+          </WrapperMain>
+        }
+      />
+    </Routes>
   );
 }
 

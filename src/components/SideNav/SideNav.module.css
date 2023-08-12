@@ -1,0 +1,15 @@
+.navCont {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100vh;
+  gap: 6rem;
+  margin: 5rem auto;
+}
+
+.navCont a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  padding-left: 3rem;
+}
