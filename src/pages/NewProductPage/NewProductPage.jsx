@@ -121,7 +121,7 @@ const NewProductPage = () => {
         <div>
           <label htmlFor="">Delivered:</label>
           <input
-            type="text"
+            type="number"
             value={newProduct?.delivered}
             onChange={(e) =>
               setNewProduct((prev) => ({ ...prev, delivered: e.target.value }))
@@ -138,7 +138,11 @@ const NewProductPage = () => {
             }
           />
         </div>
-        <button type="submit" onClick={(e) => handleSubmit(e, newProduct)}>
+        <button
+          className={styles.btn}
+          type="submit"
+          onClick={(e) => handleSubmit(e, newProduct)}
+        >
           Add New Product
         </button>
       </form>

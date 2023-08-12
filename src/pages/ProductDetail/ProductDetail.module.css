@@ -5,3 +5,8 @@
   justify-content: space-evenly;
   gap: 1rem;
 }
+
+.cont div span {
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
