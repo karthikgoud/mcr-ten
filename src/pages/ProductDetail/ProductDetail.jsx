@@ -25,11 +25,29 @@ const ProductDetail = () => {
     <div className={styles.cont}>
       <h1>{name}</h1>
       <img src={imageUrl} alt={name} width={200} />
-      <div>price:{price}</div>
-      <div>Stock:{stock}</div>
-      <div>SKU:{sku}</div>
-      <div>DElivered:{delivered}</div>
-      <div>Description:{description}</div>
+      <div>
+        <span>Price:</span>${price}
+      </div>
+      <div>
+        <span>Stock:</span>
+        {stock}
+      </div>
+      <div>
+        <span>SKU:</span>
+        {sku}
+      </div>
+      <div>
+        <span>Delivered:</span>
+        {delivered}
+      </div>
+      <div>
+        <span>Supplier:</span>
+        {supplier}
+      </div>
+      <div>
+        <span>Description:</span>
+        {description}
+      </div>
     </div>
   );
 };
