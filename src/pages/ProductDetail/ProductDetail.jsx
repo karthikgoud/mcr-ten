@@ -41,6 +41,10 @@ const ProductDetail = () => {
         {delivered}
       </div>
       <div>
+        <span>Supplier:</span>
+        {supplier}
+      </div>
+      <div>
         <span>Description:</span>
         {description}
       </div>
