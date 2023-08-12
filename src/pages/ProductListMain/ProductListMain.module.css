@@ -1,0 +1,47 @@
+.productMain {
+  padding: 1rem;
+}
+
+.productNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  margin-bottom: 1rem;
+}
+.table {
+  width: 100%;
+  height: 80%;
+}
+
+table th {
+  text-align: start;
+  padding: 0.5rem 1rem;
+  background-color: lightgray;
+}
+
+td {
+  padding: 0.5rem;
+}
+
+tr {
+  border: 1px solid;
+}
+
+.dropDown {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newProduct {
+  padding: 0.4rem 1.5rem;
+  background-color: #027bff;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
